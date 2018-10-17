@@ -2,6 +2,8 @@
 
 --- data files in "data" folder.
 
+--- sample plots in "plots" folder.
+
 --- run file apop.py.
 
 --- Boxplot or violin plots for:
