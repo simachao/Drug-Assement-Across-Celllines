@@ -7,9 +7,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+
+plots_folder = 'plots/'
+
 #%% functions
 def barplot(D,measureType):
     
+    global plots_folder
     
     allkeys = D.keys()
     #dictValues = dict.fromkeys(allkeys)
@@ -96,13 +100,14 @@ def barplot(D,measureType):
         ax.text(len(rects)+0.2, -1,'Never Occurred',ha='left', va='bottom')
     
     plt.plot()
-    plt.savefig(measureType+'_boxplot.png')
+    plt.savefig(plots_folder+measureType+'_boxplot.png')
     
 
 
 
 def violinplot(D,measureType):
     
+    global plots_folder
     
     allkeys = D.keys()
     dictValues = dict.fromkeys(allkeys)
@@ -202,4 +207,4 @@ def violinplot(D,measureType):
         ax.text(xmax, -1,'Never Occurred',ha='left', va='bottom')
     
     plt.plot()
-    plt.savefig(measureType+'_violin.png')
+    plt.savefig(plots_folder+measureType+'_violin.png')
